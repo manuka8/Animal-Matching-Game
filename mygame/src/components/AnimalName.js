@@ -6,7 +6,7 @@ const AnimalName = ({ animalImg }) => {
   animalImg(animals[randnum].img);
   return (
     <div>
-      <h1>Animal Name</h1>
+      <h2>Animal Name</h2>
       <p>{animals[randnum].name}</p>
     </div>
   );
