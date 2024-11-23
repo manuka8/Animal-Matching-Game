@@ -1,13 +1,9 @@
-import React from 'react'
-import { animals } from '../AnimalsDb';
-const AnimalName = () => {
-    const randnum = Math.floor(Math.random() * 10) + 1;
-  return (
-    <div>
-      <h1>Animal Name</h1>
-      <p>{animals[randnum].name}</p>
-    </div>
-  )
-}
+import React from "react";
+import { animals } from "../AnimalsDb";
 
-export default AnimalName
+const AnimalName = ({ animalImg }) => {
+  const randnum = Math.floor(Math.random() * animals.length);
+  
+};
+
+export default AnimalName;
