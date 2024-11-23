@@ -1,6 +1,4 @@
-Below is a **README.md** file for the given assignment. It outlines the project setup, functionality, and usage for the game described in the document.
 
-```markdown
 # Children's Animal Recognition Game
 
 This project is a React-based game designed to enhance children's object recognition and language abilities. The goal is for players to correctly match an animal name with its corresponding image from a grid of 16 animal images. The game is both educational and interactive, providing immediate feedback on the player's choices.
