@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+Below is a **README.md** file for the given assignment. It outlines the project setup, functionality, and usage for the game described in the document.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Children's Animal Recognition Game
 
-## Available Scripts
+This project is a React-based game designed to enhance children's object recognition and language abilities. The goal is for players to correctly match an animal name with its corresponding image from a grid of 16 animal images. The game is both educational and interactive, providing immediate feedback on the player's choices.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [How to Play](#how-to-play)
+- [File Structure](#file-structure)
+- [Development Notes](#development-notes)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Dynamic Animal Name Display**  
+   - A random animal name is displayed at the start of each round.
 
-### `npm run build`
+2. **Dynamic Image Rendering**  
+   - A grid of 16 animal images is displayed. Images are dynamically loaded from the provided `AnimalsDb.JS`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Interactive Gameplay**  
+   - Players click on an image to make their selection. The game immediately provides feedback:  
+     - **Win**: If the player selects the correct image.  
+     - **Lose**: If the player's choice is incorrect.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React.js** for building the interactive UI.
+- **JavaScript** for dynamic data handling and logic implementation.
+- **CSS** for styling the game interface.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Prerequisites**  
+   Ensure you have the following installed:
+   - Node.js and npm
+   - VS Code (or any text editor of your choice)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Download the Project**  
+   - Obtain the project ZIP file from the shared drive and extract it to your local machine.
 
-## Learn More
+3. **Install Dependencies**  
+   Navigate to the project folder in your terminal and run:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Run the Development Server**  
+   Start the React development server:
+   ```bash
+   npm start
+   ```
+   The game will open in your default browser at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Submit Your Work**  
+   Once you've completed the coding tasks, copy the `src` folder and place it in the `Z drive` as per the instructions.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Play
 
-### Analyzing the Bundle Size
+1. A random animal name will be displayed on the left side of the game screen.
+2. Click on the correct animal image from the 16 displayed options.
+3. Immediate feedback will be provided:
+   - **Correct Selection**: "Win" message displayed.
+   - **Incorrect Selection**: "Lose" message displayed.
+4. Refresh the page to play again.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+project-folder/
+├── public/
+├── src/
+│   ├── components/     # React components (e.g., GameBoard, AnimalCard)
+│   ├── assets/         # Images and other static files
+│   ├── AnimalsDb.js    # Animal data file
+│   ├── App.js          # Main application component
+│   ├── index.js        # Entry point for React
+│   └── styles.css      # Custom styles for the game
+├── package.json        # Project metadata and dependencies
+└── README.md           # Project documentation
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Development Notes
 
-### Deployment
+- Use the `AnimalsDb.JS` file for animal names and image references.
+- Utilize `Math.floor(Math.random() * 10) + 1` to randomize the displayed animal name.
+- Ensure accessibility and responsive design for a better user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is intended for educational purposes only. All rights reserved by the **Department of Physical Science, Faculty of Applied Science, University of Vavuniya**.
+```
+
+Let me know if you'd like additional details or changes.
