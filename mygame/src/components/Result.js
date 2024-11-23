@@ -3,7 +3,7 @@ import React from "react";
 const Result = ({ receivedResult }) => {
   return (
     <div>
-      <h1>{receivedResult}</h1>
+      <h2>{receivedResult}</h2>
     </div>
   );
 };
