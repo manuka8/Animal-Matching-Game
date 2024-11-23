@@ -21,14 +21,16 @@ function App() {
       <div className="header">
         <h2>ANIMAL MATCHING GAME</h2>
       </div>
-      <div className="body-container">
-        <AnimalName animalImg={handleImg} />
-      </div>
-      <div>
-        <SelectAnimal receivedAnimalImg={img} result={handleResult} />
-      </div>
-      <div>
-        <Result receivedResult={result} />
+      <div className='body-container'>
+        <div className="result">
+          <Result receivedResult={result} /> 
+        </div>
+        <div className='animalname'>
+          <AnimalName animalImg={handleImg} />
+        </div>
+        <div className='selectimg'>
+          <SelectAnimal receivedAnimalImg={img} result={handleResult} />
+        </div>
       </div>
     </div>
   );

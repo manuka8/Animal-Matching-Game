@@ -47,4 +47,15 @@
 
 .body-container{
   display: flex;
+  width: 100%;
+}
+.result{
+  width:15%;
+}
+
+.animalname{
+  width:15%;
+}
+.selectimg{
+  width:70%
 }
