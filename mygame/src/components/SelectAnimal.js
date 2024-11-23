@@ -1,21 +1,36 @@
-import React from 'react'
-import { animals } from '../AnimalsDb'
-const SelectAnimal = () => {
-  const animalimg = [];
-  for (let i = 0; i < animals.length; i++) {
-    animalimg.push(animals[i].img);
-  }
-  const randomAnimalimg = [...animalimg].sort(() => Math.random() - 0.5);
+import React from "react";
+import { animals } from "../AnimalsDb";
+
+const SelectAnimal = ({ receivedAnimalImg, result }) => {
+  const animalImages = animals.map((animal) => animal.img);
+
+  const randomAnimalImages = [...animalImages].sort(() => Math.random() - 0.5);
+
+  const handleName = (animalImg) => {
+    const isSame = animalImg === receivedAnimalImg; 
+    result(isSame); 
+  };
+
   return (
     <div>
       <table>
-        {randomAnimalimg.map((animal,index)=>(
-          <td><img src={require('../assets/fig/'+animal)}/></td>
-        )
-        )}
+        <tbody>
+          <tr>
+            {randomAnimalImages.map((animalImg, index) => (
+              <td key={index}>
+                <button onClick={() => handleName(animalImg)}>
+                  <img
+                    src={require(`../assets/fig/${animalImg}`)}
+                    alt="animal"
+                  />
+                </button>
+              </td>
+            ))}
+          </tr>
+        </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
-export default SelectAnimal
+export default SelectAnimal;
